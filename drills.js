@@ -1,9 +1,10 @@
 'use strict';
 
 const HashMap = require('./HashMap');
+const HashMapSep = require('./HashMapSep');
 
 function main() {
-  const lor = new HashMap();
+  const lor = new HashMapSep();
   HashMap.MAX_LOAD_RATIO = 0.5;
   HashMap.SIZE_RATIO = 3;
 
@@ -19,10 +20,13 @@ function main() {
   lor.set('HalfElven', 'Arwen'),
   lor.set('Ent', 'Treebeard');
   // return lor.get('Hobbit');
+  console.log('hobbit', lor.get('Hobbit'));
+  console.log('maiar', lor.get('Maiar'));
   return display(lor);
+  
 }
 
-// console.log(main());
+console.log(main());
 
 function display(data) {
   let result = [];
