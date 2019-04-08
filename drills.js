@@ -33,3 +33,14 @@ function display(data) {
   }
   return result;
 }
+
+function removeDuplicates(){
+  //split string
+  // hashMap letters 26 
+  // hash function puts in index at their place in alphabet
+  // {key:g, value: key}
+  // every time a  key comes through
+  // if empty put it in hash table
+  // if collison occurs, don't put it
+  // then display then values of the hashtable by looping through each
+}
